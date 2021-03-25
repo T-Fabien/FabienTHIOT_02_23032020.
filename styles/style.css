@@ -52,11 +52,81 @@ table {
     src: url("../font/Raleway-VariableFont_wght.ttf") format("truetype");
    }
 
+   @font-face {
+    font-family: "Raleway_2";
+    src: url("../font/Raleway-Bold.ttf") format("truetype");
+   }
+
 body {
     font-family: "Raleway", serif;
+	margin:  0% 2.5%;
 }
 
-.intro 
-{
-	margin-top: 100px;
+/* Introduction */
+h1{
+	font-family: "Raleway_2", serif;
+	padding: 10px 0px;
+	font-size: 20px;
+	font-weight: 700;
 }
+
+.intro {
+	margin-top: 80px;
+}
+
+.intro p {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+/* Formulaire recherche de ville */
+
+form{
+	width: 380px;
+	height: 40px;
+	overflow: hidden;
+	background-color: #F2F2F2;
+	border: 1px solid #F2F2F2;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+form i{
+	position: relative;
+	font-size: 18px;
+
+	height: 40px;
+	margin-left: 16px;
+	margin-right: 14px;
+}
+
+form input
+{
+	position: relative;
+	width: 210px;
+	height: 20px;
+	border: 0;
+	padding: 10px 0px 10px 20px;
+	font-family: "Raleway_2", serif;
+	color : black;
+}
+
+form input::placeholder
+{
+	font-family: "Raleway_2", serif;
+	font-size: 16px;
+	color : black;
+}
+form button
+{
+	display: block;
+	position: relative;
+	float: right;
+	width: 102px;
+	height: 40px;
+	font-size: 16px;
+	color: white;
+	background-color: #0065FC;
+	border:0;
+}
+
