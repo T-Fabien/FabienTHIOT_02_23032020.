@@ -49,9 +49,14 @@ table {
 
 @font-face {
     font-family: "Raleway";
-    src: url("../polices/Raleway-VariableFont_wght.ttf") format("truetype");
+    src: url("../font/Raleway-VariableFont_wght.ttf") format("truetype");
    }
 
 body {
     font-family: "Raleway", serif;
+}
+
+.intro 
+{
+	margin-top: 100px;
 }
