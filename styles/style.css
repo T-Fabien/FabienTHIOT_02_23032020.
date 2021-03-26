@@ -46,6 +46,7 @@ table {
 }
 
 /* ? End Reset Css */
+/* Font Face */
 
 @font-face {
     font-family: "Raleway";
@@ -56,6 +57,8 @@ table {
     font-family: "Raleway_2";
     src: url("../font/Raleway-Bold.ttf") format("truetype");
    }
+
+/* Général */
 
 body {
     font-family: "Raleway", serif;
@@ -81,7 +84,7 @@ h1{
 
 /* Formulaire recherche de ville */
 
-form{
+.form_recherche{
 	width: 380px;
 	height: 40px;
 	overflow: hidden;
@@ -91,7 +94,7 @@ form{
 	margin-top: 20px;
 }
 
-form i{
+.form_recherche i{
 	position: relative;
 	font-size: 18px;
 
@@ -100,7 +103,7 @@ form i{
 	margin-right: 14px;
 }
 
-form input
+.input_recherche
 {
 	position: relative;
 	width: 210px;
@@ -113,14 +116,14 @@ form input
 	outline-width: 0;
 }
 
-form input::placeholder
+.input_recherche::placeholder
 {
 	font-family: "Raleway_2", serif;
 	font-size: 16px;
 	color : black;
 }
 
-form button
+.btn_recherche
 {
 	display: block;
 	position: relative;
@@ -137,5 +140,94 @@ form button
 form button:active {
 	border:0px;
 	text-decoration: none;
+}
+
+/* Filtres de la recherche */
+
+.filtre{
+	display: flex;
+	flex-direction: row;
+	margin-top: 30px;
+}
+
+.filtre h2 {
+	padding: 10px 20px 10px 0px;
+	font-family: "Raleway_2", serif;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.form_filtre {
+    display: flex;
+    flex-direction: row;
+	width: 100%;
+	height: 40px;
+}
+
+.form_filtre div{
+	display: flex;
+	width: 180px;
+	height: 40px;
+	overflow: hidden;
+	background-color: white;
+	border: 1px solid #F2F2F2;
+	border-radius: 30px;
+	margin: 0px 15px;
+}
+
+.form_filtre .icon_filtre {
+	position: relative;
+	background-color: #F2F2F2;
+	width: 40px;
+	height: 40px;
+	border-radius: 30px;
+	border: 1px solid #F2F2F2;
+	align-content: center;
+	align-self: center;
+	align-items: center;
+	margin: 0;
+}
+
+.form_filtre .icon_filtre i{
+	position: absolute;
+	color: #0065FC;
+	width: 40px;
+	text-align: center;
+}
+
+.form_filtre div button{
+	position: relative;
+	width: 140px;
+	height: 40px;
+	background-color: white;
+	border: none;
+	text-align: center;
+	margin: 0;
+	outline-width: 0;
+}
+
+/* Information */
+
+.information_recherche{
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+
+.information_recherche i{
+	background-color: white;
+	color: #0065FC;
+	font-size: 14px;
+	border-radius: 30px;
+	border: 1px solid #F2F2F2;
+	text-align: center;
+	padding: 5px 10px;
+}
+
+.information_recherche p{
+	display: flex;
+	font-size: 12px;
+	margin-left: 10px;
+	align-items: center;
 }
 

@@ -28,11 +28,36 @@
     <section class="intro">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
-        <form action="">
-          <i class="fas fa-map-marker-alt"></i>
-          <input type="text" id="city" name="city_name" placeholder="Marseille, France">
-          <button for="name">Rechercher</button>
+      <form class="form_recherche"action="">
+        <i class="fas fa-map-marker-alt"></i>
+        <input class="input_recherche" type="text" id="city" name="city_name" placeholder="Marseille, France">
+        <button class="btn_recherche" for="name">Rechercher</button>
+      </form>
+      <div class="filtre">
+        <h2>Filtres</h2>
+        <form class="form_filtre" action="">
+          <div>
+            <div class="icon_filtre"><i class="fas fa-money-bill-wave"></i></div>
+            <button for="name">Économique</button>
+          </div>
+          <div>
+            <div class="icon_filtre"><i class="fas fa-child"></i></div>
+            <button for="name">Familial</button>
+          </div>
+          <div>
+            <div class="icon_filtre"><i class="fas fa-heart"></i></div>
+            <button for="name">Romantique</button>
+          </div>
+          <div>
+            <div class="icon_filtre"><i class="fas fa-dog"></i></div>
+            <button for="name">Animaux autorisés</button>
+          </div>
         </form>
+      </div>
+      <div class="information_recherche">
+        <i class="fas fa-info"></i>
+        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+      </div>
     </section>
   </body>
 </html>
