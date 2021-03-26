@@ -106,9 +106,11 @@ form input
 	width: 210px;
 	height: 20px;
 	border: 0;
+	margin: 0;
 	padding: 10px 0px 10px 20px;
 	font-family: "Raleway_2", serif;
 	color : black;
+	outline-width: 0;
 }
 
 form input::placeholder
@@ -117,6 +119,7 @@ form input::placeholder
 	font-size: 16px;
 	color : black;
 }
+
 form button
 {
 	display: block;
@@ -128,5 +131,11 @@ form button
 	color: white;
 	background-color: #0065FC;
 	border:0;
+	outline-width: 0;
+}
+
+form button:active {
+	border:0px;
+	text-decoration: none;
 }
 
