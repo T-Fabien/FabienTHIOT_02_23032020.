@@ -1,18 +1,12 @@
 /* ! Reset CSS !*/
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div,
+h1, h2, h3, h4, h5, h6,
+p, a, img, i, ul, li,
+form, label,
+aside,footer, header,
+menu, nav, section
+{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -22,8 +16,7 @@ time, mark, audio, video {
 }
 /* HTML5 display-role reset for older browsers */
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+aside, footer, header, nav, section {
 	display: block;
 }
 body {
@@ -31,18 +24,6 @@ body {
 }
 ol, ul {
 	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
 }
 
 /* ? End Reset Css */
@@ -62,7 +43,70 @@ table {
 
 body {
     font-family: "Raleway", serif;
-	margin:  0% 2.5%;
+}
+
+.page{
+	margin: 0% 2.5%;
+}
+
+/* Header (NavBar) */
+
+.topbar{
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+	z-index: 1000;
+}
+
+.logo_header
+{
+    width: 20%;
+}
+.logo{
+    height: 50px;
+    margin: 15px 15px 15px 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 80%;
+    margin-right: 5%;
+}
+nav ul 
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    align-items: center;
+}
+nav li{
+    padding: 29px 20px;
+    color:black;
+    font-size: 20px;
+	border-top: 3px solid transparent;
+}
+
+li:hover
+{
+    color: #0065FC;
+	border-top: 3px solid #0065FC;
+}
+
+
+.page_active {
+	color: #0065FC;
+	border-top: 3px solid #0065FC;
+}
+
+.nav_inscrire{
+	color: #0065FC;
+	font-family: "Raleway_2", serif;
 }
 
 /* Introduction */
@@ -70,7 +114,6 @@ h1{
 	font-family: "Raleway_2", serif;
 	padding: 10px 0px;
 	font-size: 20px;
-	font-weight: 700;
 }
 
 .intro {
@@ -137,6 +180,11 @@ h1{
 	outline-width: 0;
 }
 
+button {
+	font-family: "Raleway_2", serif;
+	font-size: 14px;
+}
+
 form button:active {
 	border:0px;
 	text-decoration: none;
@@ -154,7 +202,6 @@ form button:active {
 	padding: 10px 20px 10px 0px;
 	font-family: "Raleway_2", serif;
 	font-size: 18px;
-	font-weight: 600;
 }
 
 .form_filtre {
@@ -166,7 +213,7 @@ form button:active {
 
 .form_filtre div{
 	display: flex;
-	width: 180px;
+	width: 250px;
 	height: 40px;
 	overflow: hidden;
 	background-color: white;
@@ -197,7 +244,7 @@ form button:active {
 
 .form_filtre div button{
 	position: relative;
-	width: 140px;
+	width: 180px;
 	height: 40px;
 	background-color: white;
 	border: none;
@@ -211,7 +258,7 @@ form button:active {
 .information_recherche{
 	display: flex;
 	flex-direction: row;
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .information_recherche i{
@@ -231,3 +278,139 @@ form button:active {
 	align-items: center;
 }
 
+/* Section Résultats */
+
+h3{
+	font-family: "Raleway_2", serif;
+	font-size: 20px;
+	padding: 25px 0 5px 40px
+}
+
+.Resultat{
+	display: flex;
+}
+
+.Resultat section {
+	background-color: #F2F2F2;
+	border-radius: 20px;
+	margin: 1% 3% 3% 0%;
+}
+
+.gras{
+	font-family: "Raleway_2", serif;
+}
+
+.prix {
+	padding-left: 5px;
+}
+
+.avis{
+	font-size: 14px;
+	color: #0065FC ;
+}
+
+.avis i {
+	margin: 0% -0.5%;
+}
+
+.avis .gris {
+	color: #F2F2F2;
+}
+
+/* Partie Hébergements */
+
+.Hebergement {
+	width: 75%;
+}
+
+.Hebergement img{
+	width: 340px;
+	height: -webkit-fill-available;
+	padding: 5px;
+	border-radius: 15px 15px 100px 100px;
+}
+
+.heb_grille{
+	display: grid;
+
+	justify-items: center;
+	grid-template-rows: auto;
+	grid-gap: 0px 0%;
+	grid-template-columns: repeat(3, minmax(100px, 33.3%));
+}
+
+.heb_carte{
+	width: 350px;
+	height: 200px;
+	background-color: white;
+	margin: 15px;
+	border-radius: 15px;
+	overflow: hidden;
+	justify-items: center;
+}
+
+.heb_description_carte{
+	background-color: white;
+	display: block;
+	position: relative;
+	top: -80px;
+	padding: 2% 0% 5% 5%;
+}
+
+.heb_description_nuit {
+	display: flex;
+	flex-direction: row;
+	padding: 2% 0%;
+}
+
+/* Partie Populaire */
+
+.Populaire img{
+	width: 200px;
+	padding: 5px;
+	border-radius: 15px 0px 0px 15px;
+	z-index: 0;
+}
+
+.Populaire {
+	width: 25%;
+}
+
+.pop_grille{
+	display: grid;
+
+	justify-items: center;
+	grid-template-rows: auto;
+	grid-gap: 20px 0%;
+	grid-template-columns: repeat(1, minmax(100px, 100%));
+}
+
+.pop_carte{
+	width: 90%;
+	height: 160px;
+	background-color: white;
+	margin: 15px 0px;
+	border-radius: 15px;
+	overflow: hidden;
+	justify-items: center;
+	display: flex;
+	flex-direction: row;
+}
+
+.pop_description_carte{
+	background-color: white;
+	display: block;
+	position: relative;
+	padding: 3% 0% 2% 5%;
+	margin-left: -10%;
+}
+
+.pop_description_nuit {
+	display: flex;
+	flex-direction: row;
+	padding: 20% 0%;
+}
+
+.pop_avis{
+	padding-top: 10%;
+}
