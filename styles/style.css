@@ -213,23 +213,20 @@ form button:active {
 
 .form_filtre div{
 	display: flex;
-	width: 250px;
 	height: 40px;
 	overflow: hidden;
 	background-color: white;
-	border: 1px solid #F2F2F2;
+	border: 2px solid #F2F2F2;
 	border-radius: 30px;
 	margin: 0px 15px;
 }
 
 .form_filtre .icon_filtre {
 	position: relative;
-	background-color: #F2F2F2;
+	background-color: #DEEBFF;
 	width: 40px;
 	height: 40px;
 	border-radius: 30px;
-	border: 1px solid #F2F2F2;
-	align-content: center;
 	align-self: center;
 	align-items: center;
 	margin: 0;
@@ -244,11 +241,10 @@ form button:active {
 
 .form_filtre div button{
 	position: relative;
-	width: 180px;
 	height: 40px;
 	background-color: white;
 	border: none;
-	text-align: center;
+	padding: 1px 10px;
 	margin: 0;
 	outline-width: 0;
 }
