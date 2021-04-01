@@ -96,6 +96,7 @@ li:hover
 {
     color: #0065FC;
 	border-top: 3px solid #0065FC;
+	cursor: pointer;
 }
 
 
@@ -289,7 +290,7 @@ h3{
 .Resultat section {
 	background-color: #F2F2F2;
 	border-radius: 20px;
-	margin: 1% 3% 3% 0%;
+	margin: 1% 3% 1% 0%;
 }
 
 .gras{
@@ -367,6 +368,10 @@ h3{
 	padding: 2% 0%;
 }
 
+.affiche_plus {
+	padding: 25px 40px;
+}
+
 /* Partie Populaire */
 
 .Populaire img{
@@ -385,7 +390,7 @@ h3{
 	display: grid;
 	justify-items: center;
 	grid-template-rows: auto;
-	grid-gap: 20px 0%;
+	grid-gap: 4px 0%;
 	grid-template-columns: repeat(1, minmax(100px, 100%));
 }
 
@@ -396,7 +401,6 @@ h3{
 	margin: 15px 0px;
 	border-radius: 15px;
 	overflow: hidden;
-	justify-items: center;
 	display: flex;
 	flex-direction: row;
 }
@@ -424,6 +428,95 @@ h3{
 	padding-top: 0px;
 }
 
+/* Partie Activités */
+.activites {
+	padding-top: 0;
+}
+.activites_flex {
+	display: flex;
+}
+
+.act_image{
+	width: 400px;
+	height: 600px;
+	margin: 0px 20px;
+}
+
+.image_1_hauteur{
+	width: 400px;
+	height: 235px;
+	border: 1px solid #F2F2F2;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 20px 0px 28px 0px;
+}
+
+.image_2_hauteur{
+	width: 400px;
+	height: 500px;
+	border: 1px solid #F2F2F2;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 20px;
+}
+
+.image_1_hauteur img{
+	width: 400px;
+	height: 250px;
+	object-fit: cover;
+	position: relative;
+	top: -35px;
+}
+
+.image_2_hauteur img{
+	width: 400px;
+	height: 500px;
+	object-fit: cover;
+	position: relative;
+	top: -45px;
+}
+.desc_activites {
+	width: 400px;
+	height: 40px;
+	background-color: white;
+	display: block;
+	position: relative;
+	padding: 15px 20px;
+}
+
+.image_2_hauteur .desc_activites {
+	top: -55px;
+}
+
+.image_1_hauteur .desc_activites {
+	top: -70px;
+}
+
+/* Footer */
 footer{
-	
+	display: grid;
+
+	justify-items: center;
+	grid-template-rows: auto;
+	grid-gap: 0px 0%;
+	grid-template-columns: repeat(3, minmax(100px, 33.3%));
+	padding: 40px 0px;
+	background-color: #F2F2F2;
+}
+
+footer div
+{
+	display: flex;
+	flex-direction: column;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+	padding-top: 15px;
+}
+
+.footer_titre {
+	padding-bottom: 15px;
+	font-size: 18px;
 }
