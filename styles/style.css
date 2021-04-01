@@ -41,7 +41,7 @@ ol, ul {
 
 /* Général */
 
-body {
+body, p {
     font-family: "Raleway", serif;
 }
 
@@ -111,7 +111,7 @@ li:hover
 }
 
 /* Introduction */
-h1{
+h2{
 	font-family: "Raleway_2", serif;
 	padding: 10px 0px;
 	font-size: 20px;
@@ -199,7 +199,7 @@ form button:active {
 	margin-top: 30px;
 }
 
-.filtre h2 {
+.filtre h3 {
 	padding: 10px 20px 10px 0px;
 	font-family: "Raleway_2", serif;
 	font-size: 18px;
@@ -277,7 +277,7 @@ form button:active {
 
 /* Section Résultats */
 
-h3{
+h4{
 	font-family: "Raleway_2", serif;
 	font-size: 20px;
 	padding: 25px 0 5px 40px
@@ -287,10 +287,10 @@ h3{
 	display: flex;
 }
 
-.Resultat section {
+.Hebergement , .Populaire{
 	background-color: #F2F2F2;
-	border-radius: 20px;
 	margin: 1% 3% 1% 0%;
+	border-radius: 20px;
 }
 
 .gras{
@@ -318,6 +318,10 @@ h3{
 
 .Hebergement {
 	width: 75%;
+}
+
+.heb_titre , .pop_titre {
+	font-size: 18px;
 }
 
 .heb_grille{
@@ -358,8 +362,9 @@ h3{
 	background-color: white;
 	display: block;
 	position: relative;
-	top: -90px;
-	padding: 2% 0% 5% 5%;
+	top: -100px;
+	padding: 3% 0% 5% 5%;
+	width: 350px;
 }
 
 .heb_description_nuit {
