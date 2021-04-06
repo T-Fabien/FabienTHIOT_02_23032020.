@@ -290,7 +290,7 @@ form button:active {
 h4{
 	font-family: "Raleway_2", serif;
 	font-size: 24px;
-	padding: 25px 0 5px 40px
+	padding: 25px 0 25px 40px
 }
 
 .gras{
@@ -336,21 +336,21 @@ h4{
 	display: grid;
 
 	justify-items: center;
-	grid-gap: 0px 0%;
+	grid-gap: 3% 2%;
 	grid-template-columns: repeat(3, minmax(100px, 33.3%));
+	height: 85%;
 }
 
 .heb_carte{
-	width: 350px;
-	height: 260px;
+	width: 95%;
+	height: 95%;
 	background-color: white;
-	margin: 15px;
 	border-radius: 15px;
 	overflow: hidden;
 }
 
 .Hebergement .image{
-	width: 340px;
+	width: calc(100% - 10px);
 	height: 250px;
 	border-radius: 10px 10px 10px 10px;
 	margin: 5px;
@@ -358,30 +358,29 @@ h4{
 }
 
 .image img{
-	width: 340px;
-	height: 300px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
 	position: relative;
-	top: -70px;
+	top: -40px;
 }
 
 .heb_description_carte{
 	background-color: white;
 	display: block;
 	position: relative;
-	top: -100px;
-	padding: 3% 0% 5% 5%;
-	width: 350px;
+	top: -50px;
+	padding: 3% 0 0 5%;
 }
 
 .heb_description_nuit {
 	display: flex;
 	flex-direction: row;
-	padding: 2% 0%;
+	padding: 10px 0%;
 }
 
 .affiche_plus {
-	padding: 25px 40px;
+	padding: 5px 40px;
 }
 
 /* Partie Populaire */
@@ -402,15 +401,14 @@ h4{
 .pop_grille{
 	display: grid;
 	justify-items: center;
-	grid-gap: 4px 0%;
+	grid-gap: 5% 0%;
 	grid-template-columns: repeat(1, minmax(100px, 100%));
 }
 
 .pop_carte{
 	width: 90%;
-	height: 160px;
+	height: 200px;
 	background-color: white;
-	margin: 15px 0px;
 	border-radius: 15px;
 	overflow: hidden;
 	display: flex;
@@ -421,23 +419,23 @@ h4{
 	background-color: white;
 	display: block;
 	position: relative;
-	padding: 3% 0% 2% 5%;
-	margin-left: -10%;
+	padding: 3% 0% 0% 5%;
+	margin-left: 0%;
+	width: 100%;
 }
 
-.pop_description_carte p{
-	height: 40px;
+.pop_titre{
+	height: 40%;
 }
 
 .pop_description_nuit {
 	display: flex;
 	flex-direction: row;
-	padding: 10px 0% 30px;
-	height: 40px
+	height: 40%;
 }
 
 .pop_avis{
-	padding-top: 0px;
+	height: 10%;
 }
 
 /* Partie Activités */
