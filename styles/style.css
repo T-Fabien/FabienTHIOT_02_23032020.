@@ -91,6 +91,12 @@ nav li{
     font-size: 20px;
 	border-top: 3px solid transparent;
 }
+nav a{
+	text-decoration: none;
+}
+nav a:visited{
+	color: inherit;
+}
 
 li:hover
 {
@@ -100,7 +106,7 @@ li:hover
 }
 
 
-.page_active {
+.page_active{
 	color: #0065FC;
 	border-top: 3px solid #0065FC;
 }
@@ -205,14 +211,14 @@ form button:active {
 	font-size: 18px;
 }
 
-.form_filtre {
+.div_filtre {
     display: flex;
     flex-direction: row;
 	width: 100%;
 	height: 40px;
 }
 
-.form_filtre div{
+.div_filtre div{
 	display: flex;
 	height: 40px;
 	overflow: hidden;
@@ -222,7 +228,7 @@ form button:active {
 	margin: 0px 15px;
 }
 
-.form_filtre .icon_filtre {
+.div_filtre .icon_filtre {
 	position: relative;
 	background-color: #DEEBFF;
 	width: 40px;
@@ -233,14 +239,14 @@ form button:active {
 	margin: 0;
 }
 
-.form_filtre .icon_filtre i{
+.div_filtre .icon_filtre i{
 	position: absolute;
 	color: #0065FC;
 	width: 40px;
 	text-align: center;
 }
 
-.form_filtre div button{
+.div_filtre div button{
 	position: relative;
 	height: 40px;
 	background-color: white;
@@ -277,20 +283,14 @@ form button:active {
 
 /* Section Résultats */
 
-h4{
-	font-family: "Raleway_2", serif;
-	font-size: 20px;
-	padding: 25px 0 5px 40px
-}
-
 .Resultat{
 	display: flex;
 }
 
-.Hebergement , .Populaire{
-	background-color: #F2F2F2;
-	margin: 1% 3% 1% 0%;
-	border-radius: 20px;
+h4{
+	font-family: "Raleway_2", serif;
+	font-size: 20px;
+	padding: 25px 0 5px 40px
 }
 
 .gras{
@@ -314,14 +314,22 @@ h4{
 	color: #F2F2F2;
 }
 
-/* Partie Hébergements */
+/* Partie Hébergements et Populaires */
 
-.Hebergement {
-	width: 75%;
+.Hebergement , .Populaire{
+	background-color: #F2F2F2;
+	border-radius: 20px;
 }
 
 .heb_titre , .pop_titre {
 	font-size: 18px;
+}
+
+/* Partie Hébergements */
+
+.Hebergement {
+	width: 75%;
+	margin: 1% 0% 1% 0%;
 }
 
 .heb_grille{
@@ -379,16 +387,17 @@ h4{
 
 /* Partie Populaire */
 
+.Populaire {
+	width: 25%;
+	margin: 1% 1% 1% 3%;
+}
+
 .Populaire img{
 	width: 200px;
 	padding: 5px;
 	border-radius: 15px 0px 0px 15px;
 	z-index: 0;
 	object-fit: cover;
-}
-
-.Populaire {
-	width: 25%;
 }
 
 .pop_grille{
@@ -438,13 +447,18 @@ h4{
 	padding-top: 0;
 }
 .activites_flex {
-	display: flex;
+	display: grid;
+
+	justify-items: center;
+	grid-template-rows: auto;
+	grid-gap: 0;
+	grid-template-columns: repeat(4, minmax(100px, 25%));
+	padding: 20px 0px;
 }
 
 .act_image{
 	width: 400px;
 	height: 600px;
-	margin: 0px 20px;
 }
 
 .image_1_hauteur{
@@ -453,7 +467,6 @@ h4{
 	border: 1px solid #F2F2F2;
 	border-radius: 10px;
 	overflow: hidden;
-	margin: 20px 0px 28px 0px;
 }
 
 .image_2_hauteur{
@@ -462,7 +475,6 @@ h4{
 	border: 1px solid #F2F2F2;
 	border-radius: 10px;
 	overflow: hidden;
-	margin: 20px;
 }
 
 .image_1_hauteur img{
@@ -503,7 +515,7 @@ footer{
 
 	justify-items: center;
 	grid-template-rows: auto;
-	grid-gap: 0px 0%;
+	grid-gap: 0;
 	grid-template-columns: repeat(3, minmax(100px, 33.3%));
 	padding: 40px 0px;
 	background-color: #F2F2F2;
@@ -525,3 +537,40 @@ footer a {
 	padding-bottom: 15px;
 	font-size: 18px;
 }
+
+/* Responsive */
+
+/* 4k devices (larger desktop,2560px)*/
+@media (min-width: 2560px) {
+
+}
+
+/* XX-Large devices (large+ desktop, 1400px and up)*/
+@media (min-width: 1400px) {
+
+}
+
+/* X-Large devices (large desktop, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
+
+/* Large devices (desktop, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+}
+
+
+
+
+
