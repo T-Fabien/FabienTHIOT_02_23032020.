@@ -446,7 +446,7 @@ h4{
 .activites {
 	padding-top: 0;
 }
-.activites_flex {
+.activites_grid {
 	display: grid;
 
 	justify-items: center;
@@ -467,6 +467,7 @@ h4{
 	border: 1px solid #F2F2F2;
 	border-radius: 10px;
 	overflow: hidden;
+	margin: 10px 0px 28px 0px;
 }
 
 .image_2_hauteur{
@@ -475,6 +476,7 @@ h4{
 	border: 1px solid #F2F2F2;
 	border-radius: 10px;
 	overflow: hidden;
+	margin-top: 10px;
 }
 
 .image_1_hauteur img{
