@@ -611,7 +611,7 @@ footer a {
 
 }
 
-/* XX-Large devices (large desktop, 1200px to 1500px)*/
+/* XX-Large devices (large desktop, 1300px to 1500px)*/
 @media (min-width: 1300px) and (max-width: 1500px) {
 
   nav {
@@ -650,7 +650,7 @@ footer a {
   }
 }
 
-/* Large devices (desktop, 1000px and up)*/
+/* Large devices (desktop, 1000px to 1300px)*/
 @media (min-width: 1000px) and (max-width: 1300px) {
 
   nav {
@@ -689,7 +689,7 @@ footer a {
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 750px to 1000px) */
 @media (min-width: 750px) and (max-width: 1000px){
 
   nav {
@@ -767,7 +767,7 @@ footer a {
 
 }
 
-/* Small devices (landscape phones, 500px to 750px) */
+/* Small devices (landscape phones, 400px to 750px) */
 @media (min-width: 400px) and (max-width: 750px) {
 
     /* Header */
@@ -1108,7 +1108,7 @@ footer a {
   }
 
   .heb_description_carte {
-    top: -150px;
+    top: -155px;
     padding: 3% 0 4% 5%;
   }
 
