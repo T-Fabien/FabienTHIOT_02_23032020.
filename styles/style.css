@@ -249,6 +249,11 @@ form button:active {
   margin: 0px 15px;
 }
 
+.contenu_filtre:hover {
+  background-color: white;
+  border: 2px solid #0065fc;
+}
+
 .div_filtre .icon_filtre {
   position: relative;
   background-color: #deebff;
