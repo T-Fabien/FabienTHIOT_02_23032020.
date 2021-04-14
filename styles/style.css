@@ -619,7 +619,7 @@ footer a {
   }
 
   .resultat {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .hebergement{ 
@@ -658,7 +658,7 @@ footer a {
   }
 
   .resultat {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .hebergement{ 
@@ -708,7 +708,7 @@ footer a {
 
   /* Herbergement & Populaire */
   .resultat {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
   .hebergement{ 
