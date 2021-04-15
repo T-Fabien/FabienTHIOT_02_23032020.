@@ -158,7 +158,7 @@ h2 {
 a,
 a:visited {
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 /* Formulaire recherche de ville */
 
