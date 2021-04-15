@@ -124,7 +124,7 @@ nav li {
 }
 
 .page_active a{ 
-  color: #0065fc;
+  color: #0065fc !important;
 }
 
 .nav_inscrire {
