@@ -71,12 +71,6 @@ p {
   margin: 0% 2.5%;
 }
 
-a,
-a:visited {
-  text-decoration: none;
-  color: black;
-}
-
 /* Header (NavBar) */
 
 .topbar {
@@ -124,7 +118,7 @@ nav li {
 }
 
 .page_active a{ 
-  color: #0065fc !important;
+  color: #0065fc;
 }
 
 .nav_inscrire {
@@ -145,8 +139,6 @@ li:hover {
   cursor: pointer;
 }
 
-
-
 /* Introduction */
 h2 {
   font-family: "Raleway_2", serif;
@@ -163,6 +155,11 @@ h2 {
   font-weight: 500;
 }
 
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
 /* Formulaire recherche de ville */
 
 .form_recherche {
