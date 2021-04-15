@@ -139,6 +139,10 @@ li:hover {
   cursor: pointer;
 }
 
+li:hover a{
+  color: #0065fc;
+}
+
 /* Introduction */
 h2 {
   font-family: "Raleway_2", serif;
