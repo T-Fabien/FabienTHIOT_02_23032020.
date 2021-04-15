@@ -117,6 +117,21 @@ nav li {
   font-size: 20px;
   border-top: 3px solid transparent;
 }
+
+.page_active { 
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+}
+
+.page_active a{ 
+  color: #0065fc;
+}
+
+.nav_inscrire {
+  color: #0065fc;
+  font-family: "Raleway_2", serif;
+}
+
 nav a {
   text-decoration: none;
 }
@@ -130,15 +145,7 @@ li:hover {
   cursor: pointer;
 }
 
-.page_active {
-  color: #0065fc;
-  border-top: 3px solid #0065fc;
-}
 
-.nav_inscrire {
-  color: #0065fc;
-  font-family: "Raleway_2", serif;
-}
 
 /* Introduction */
 h2 {
