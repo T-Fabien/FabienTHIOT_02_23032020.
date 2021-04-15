@@ -214,6 +214,7 @@ a:visited {
   background-color: #0065fc;
   border: 0;
   outline-width: 0;
+  cursor: pointer;
 }
 
 button {
@@ -224,6 +225,10 @@ button {
 form button:active {
   border: 0px;
   text-decoration: none;
+}
+
+.fa-search {
+  display: none;
 }
 
 /* Filtres de la recherche */
@@ -258,7 +263,6 @@ form button:active {
 }
 
 .contenu_filtre:hover {
-  background-color: white;
   border: 2px solid #0065fc;
 }
 
@@ -288,10 +292,7 @@ form button:active {
   padding: 1px 10px;
   margin: 0;
   outline-width: 0;
-}
-
-.fa-search {
-  display: none;
+  cursor: pointer;
 }
 
 /* Information */
@@ -358,6 +359,7 @@ h4 {
 .populaire {
   background-color: #f2f2f2;
   border-radius: 20px;
+  padding-bottom: 40px;
 }
 
 .heb_titre,
@@ -387,14 +389,13 @@ h4 {
   display: grid;
 
   justify-items: center;
-  grid-gap: 3% 2%;
+  grid-gap: 5% 3%;
   grid-template-columns: repeat(3, minmax(100px, 33.3%));
-  height: 85%;
+  padding: 0 2%;
 }
 
 .heb_carte {
-  width: 95%;
-  height: 95%;
+  height: 200px;
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
@@ -413,15 +414,15 @@ h4 {
   height: 100%;
   object-fit: cover;
   position: relative;
-  top: -40px;
+  top: -100px;
 }
 
 .heb_description_carte {
   background-color: white;
   display: block;
   position: relative;
-  top: -50px;
-  padding: 3% 0 0 5%;
+  top: -145px;
+  padding: 3% 0 5% 5%;
 }
 
 .heb_description_nuit {
@@ -432,6 +433,7 @@ h4 {
 
 .affiche_plus {
   padding: 5px 40px;
+  margin-top: 50px;
 }
 
 /* Partie Populaire */
@@ -470,7 +472,7 @@ h4 {
 
 .pop_carte {
   width: 90%;
-  height: 200px;
+  height: 150px;
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
@@ -495,6 +497,7 @@ h4 {
 
 .pop_titre {
   height: 40%;
+  padding-right: 5px;
 }
 
 .pop_description_nuit {
@@ -520,9 +523,7 @@ h4 {
 .activites h4 {
   padding: 25px 0 5px 0px;
 }
-.activites h4 {
-  padding: 25px 0 5px 0px;
-}
+
 .activites_grid {
   display: grid;
   grid-gap: 0 2%;
@@ -606,7 +607,6 @@ footer a {
 .footer_titre {
   padding-bottom: 15px;
   font-size: 18px;
-  text-align: center;
 }
 
 /* Responsive */
@@ -651,10 +651,6 @@ footer a {
     padding-bottom: 2%;
   }
 
-  .heb_carte {
-    height: 90%;
-  }
-
   .hebergement .affiche_plus {
     padding-top: 2%;
   }
@@ -687,10 +683,6 @@ footer a {
   .hebergement {
     width: 100%;
     padding-bottom: 2%;
-  }
-
-  .heb_carte {
-    height: 90%;
   }
 
   .hebergement .affiche_plus {
@@ -739,18 +731,18 @@ footer a {
   }
 
   .heb_grille {
-    grid-gap: 0% 2%;
+    grid-gap: 3% 3%;
     grid-template-columns: repeat(2, minmax(100px, 50%));
-  }
-
-  .heb_carte {
-    height: 90%;
   }
 
   .hebergement .affiche_plus {
     padding-top: 0%;
     position: relative;
     top: -15px;
+  }
+
+  .affiche_plus {
+    margin-top: 80px;
   }
 
   .populaire {
@@ -887,7 +879,7 @@ footer a {
 
   .hebergement {
     width: 100%;
-    padding-bottom: 0%;
+    padding-bottom:0 ;
     background: 0;
   }
 
@@ -897,13 +889,17 @@ footer a {
   }
 
   .heb_grille {
-    grid-gap: 0% 2%;
+    grid-gap: 2% 0%;
     grid-template-columns: repeat(1, minmax(100px, 100%));
   }
 
   .heb_carte {
-    height: 90%;
     box-shadow: 0 3px 10px 1px #7e7e7e;
+  }
+
+  .heb_description_carte {
+    padding-top: 1%;
+    top: -140px;
   }
 
   .hebergement .affiche_plus {
@@ -912,6 +908,10 @@ footer a {
     top: -10px;
     padding: 5px 10px;
     font-size: 18px;
+  }
+
+  .affiche_plus {
+    margin-top: 150px;
   }
 
   .populaire {
@@ -1139,7 +1139,6 @@ footer a {
   }
 
   .heb_carte {
-    height: 90%;
     box-shadow: 0 3px 10px 1px #7e7e7e;
     height: 180px;
   }
@@ -1160,9 +1159,12 @@ footer a {
   .hebergement .affiche_plus {
     padding-top: 0%;
     position: relative;
-    margin-top: 45%;
     padding: 5px 10px;
     font-size: 18px;
+  }
+
+  .affiche_plus {
+    margin-top: 130px;
   }
 
   .populaire {
